@@ -36,4 +36,6 @@ jobs:
       uses: reactivecircus/android-emulator-runner@v2
       with:
         api-level: 29
+        heap-size: 4G
+        disk-size: 12G
         script: ./gradlew connectedCheck
